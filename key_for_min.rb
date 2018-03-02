@@ -1,14 +1,12 @@
 
 def key_for_min_value(name_hash)
-
-lowest_key = nil
-lowest_value = nil
-
-name_hash.collect do |key, value|
-  if lowestValue == nil || value < lowestValue 
-    lowestValue = value
-    key = key 
+lowKey = NIL
+lowValue = Float::INFINITY
+name_hash.each do |key, value|
+  if value < lowValue
+    lowValue = value
+    lowKey = key
   end
 end
-lowest_key
+lowKey
 end
